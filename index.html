@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sangram Fitness</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Boogaloo&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Skranji:wght@700&display=swap" rel="stylesheet">
+
+font-family: 'Skranji', cursive;
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url('img/gym.jpg.jpg');
+            /* height:1200px; */
+            /* width: 2000px; */
+            /* font-family: 'Boogaloo', cursive; */
+            font-family: 'Skranji', cursive;
+        }
+
+        .left {
+            /* border: 3px solid red; */
+            color: white;
+            display: inline-block;
+            position: absolute;
+            left: 50px;
+            top: 25px;
+
+        }
+
+        .left img {
+
+            width: 150px;
+            filter: invert(100%);
+
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+        }
+
+        .navbar li a {
+            color: white;
+            margin: 20px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            color: violet;
+            text-decoration: underline;
+        }
+
+        .left div {
+            text-align: center;
+            font-size: 21px;
+        }
+
+        .mid {
+            /* border: 3px solid green; */
+            color: white;
+            margin: 0px auto;
+            display: block;
+            width: 595px;
+        }
+
+        .right {
+            /* border: 3px solid yellow; */
+            position: absolute;
+            right: 50px;
+            top: 25px;
+            color: white;
+            display: inline-block;
+        }
+        .btn{
+            margin: 12px;
+            padding: 8px;
+            width: 100px;
+            border-radius: 20px;
+            font-family: 'Skranji', cursive;
+            cursor: pointer;
+
+        }
+        .btn:hover{background-color: black;
+        color: white;
+    }
+    .container{
+        border: 5px solid white ;
+        margin: 115px 50px;
+        width: 600px;
+        height: 375px;
+        border-radius: 3px;
+        /* background-color:rgb(70, 19, 19); */
+    }
+    .container h1{
+        text-align: center;
+        color: white;
+        text-decoration: underline;
+        
+        
+    }
+    .formgroup input{
+        display: block;
+        width: 455px;
+        text-align: center;
+        margin: 25px auto;
+        padding: 1px;
+        border: 3px solid white;
+        font-size: 17px;
+        border-radius: 8px;
+        font-weight: bold;
+        font-family: 'Skranji', cursive;
+
+
+    }
+   .container button{ display: block;
+   width: 25%;
+   margin: 30px auto;
+   font-size: 18px;
+
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="img/weight-1399281_1280.png" alt="">
+            <div>Sangram Fitness</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a> </li>
+                <li><a href="#">Fitness R</a> </li>
+                <li><a href="#">Join Now</a> </li>
+                <li><a href="#">contact Us</a> </li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">
+             Call Us 
+            </button>
+            <button class="btn">
+                Email Us
+            </button>
+        </div>
+        <div class="container">
+            <h1> Know More :</h1>
+            <form action="backend.php">
+                <div class="formgroup">  
+                <input type="text" id="#"  placeholder="Enter your Name">
+            </div>
+            <div class="formgroup">  
+                <input type="text" id="#"  placeholder="Enter your Contact">
+            </div>
+            <div class="formgroup">  
+                <input type="text" id="#"  placeholder="Enter your Gender">
+            </div>
+            <div class="formgroup">  
+                <input type="text" id="#"  placeholder="Enter your Location">
+            </div>
+            <button class="btn">
+                Submit
+            </button>
+            </form>
+        </div>
+    </header>
+</body>
+
+</html>
